@@ -103,7 +103,7 @@ function loop() {
 	// ステップ3-1
 	// Ballのインスタンスの配列 balls の全ての要素について
 	// 画面表示と位置の更新を行う
-	for(let i =0;i<balls.length;i++){
+	for(let i = 0; i < balls.length; i++){
 		balls[i].draw();
 		balls[i].update();
 	}
