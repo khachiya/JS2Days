@@ -108,7 +108,7 @@ function loop() {
 		balls[i].update();
 	}
 
-  requestAnimationFrame(loop);
+	requestAnimationFrame(loop);
 }
 
 // ステップ2-2
