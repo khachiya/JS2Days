@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Chart.jsの例</title>
+	</head>
+	<body>
+		<h1>棒グラフ</h1>
+		<canvas id="myLineChart"></canvas>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+		<script>
+			let ctx = document.getElementById("myLineChart");
+			let myLineChart = new Chart(ctx, {
+				type: 'bar',
+				data: {
+					labels: ['8月5日', '8月6日', '8月7日', '8月8日', '8月9日', '8月10日', '8月11日'],
+					datasets: [
+						{
+							label: '最高気温(度）',
+							data: [34.7, 34.8, 31.4, 28.8, 31.3, 36.8, 33.5],
+							borderColor: "red",
+							backgroundColor: "red"
+						},
+						{
+							label: '最低気温(度）',
+							data: [24, 24.6, 26.3, 24.7, 25.6, 27.2, 25.9],
+							borderColor: "blue",
+							backgroundColor: "blue"
+						}
+					],
+				},
+				options:{
+					scales:{
+						yAxes:[{
+							ticks:{
+								min:22
+							}
+						}]
+					},
+				},
+			});
+		</script>
+	</body>
+</html>
