@@ -44,7 +44,7 @@ function printGrade(toname, grade, i) {
 				})
 			]
 		}]
-  });
+	});
 
 	docx.Packer.toBuffer(doc).then((buffer) => {
 		fs.writeFileSync("grade" + i + ".docx", buffer);
